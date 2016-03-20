@@ -8,6 +8,7 @@ angular-meteor-data@0.0.9
 angular-templates@1.0.0
 angular:angular@1.5.0
 autoupdate@1.2.6-rc.3
+avital:mocha@2.1.0_10
 babel-compiler@6.5.2-rc.3
 babel-runtime@0.1.6-rc.3
 base64@1.0.6-rc.3
@@ -21,6 +22,7 @@ caching-compiler@1.0.2-rc.3
 caching-html-compiler@1.0.4-rc.3
 callback-hook@1.0.6-rc.3
 check@1.1.2-rc.3
+coffeescript@1.0.15-rc.3
 dburles:mongo-collection-instances@0.3.4
 ddp@1.2.3-rc.3
 ddp-client@1.2.3-rc.3
@@ -64,6 +66,10 @@ npm-bcrypt@0.7.8_2
 npm-mongo@1.4.41-rc.3
 observe-sequence@1.0.9-rc.3
 ordered-dict@1.0.5-rc.3
+practicalmeteor:chai@2.1.0_1
+practicalmeteor:loglevel@1.2.0_2
+practicalmeteor:mocha-core@0.1.4
+practicalmeteor:sinon@1.14.1_2
 promise@0.6.4-rc.3
 random@1.0.7-rc.3
 rate-limit@1.0.2-rc.3
@@ -82,6 +88,7 @@ standard-minifier-css@1.0.4-rc.3
 standard-minifier-js@1.0.4-rc.3
 templating@1.1.7-rc.3
 templating-tools@1.0.2-rc.3
+tmeasday:test-reporter-helpers@0.2.1
 tracker@1.0.11-rc.3
 ui@1.0.9-rc.3
 underscore@1.0.6-rc.3

@@ -21,3 +21,4 @@ angular-meteor-auth
 angular-templates
 accounts-password
 dotansimha:accounts-ui-angular
+avital:mocha
