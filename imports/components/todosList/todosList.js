@@ -4,13 +4,17 @@ import template from './todosList.html';
 import { Tasks } from '../../api/tasks';
 
 class TodosListCtrl {
-  constructor ($scope) {
+  constructor($scope) {
     $scope.viewModel(this);
 
     this.helpers({
       tasks: () => {
         // Show newest tasks at the top
-        return Tasks.find({}, { sort: { createdAt: -1 } });
+        return Tasks.find({}, {
+          sort: {
+            createdAt: -1
+          }
+        });
       }
     });
   }
@@ -29,16 +33,15 @@ class TodosListCtrl {
 
   setChecked(task) {
     Tasks.update(task._id, {
-      $set: { checked: ! task.checked }
+      $set: {
+        checked: !!task.checked
+      }
     });
   }
 }
 
 export default angular.module('todosList', [])
-.component('todosList', {
+  .component('todosList', {
     templateUrl: 'imports/components/todosList/todosList.html',
     controller: TodosListCtrl
-});
-
-
-
+  });
