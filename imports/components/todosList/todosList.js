@@ -1,5 +1,6 @@
 import angular from 'angular';
 import template from './todosList.html';
+import { Meteor } from 'meteor/meteor';
 
 import { Tasks } from '../../api/tasks';
 
@@ -39,7 +40,9 @@ class TodosListCtrl {
   addTask(newTask) {
     Tasks.insert({
       text: newTask,
-      createdAt: new Date()
+      createdAt: new Date(),
+      owner: Meteor.userId(),
+      username: Meteor.user().username
     });
     this.newTask = '';
   };
