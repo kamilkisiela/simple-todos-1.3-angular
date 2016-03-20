@@ -62,5 +62,5 @@ class TodosListCtrl {
 export default angular.module('todosList', [])
   .component('todosList', {
     templateUrl: 'imports/components/todosList/todosList.html',
-    controller: TodosListCtrl
+    controller: ['$scope', TodosListCtrl]
   });
