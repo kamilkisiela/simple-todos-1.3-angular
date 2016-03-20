@@ -8,7 +8,7 @@
 
   <login-buttons></login-buttons>
 
-  <form class="new-task" ng-submit="$ctrl.addTask($ctrl.newTask)">
+  <form class="new-task" ng-submit="$ctrl.addTask($ctrl.newTask)" ng-show="$ctrl.currentUser">
     <input ng-model="$ctrl.newTask" type="text" name="text" placeholder="Type to add new tasks"/>
   </form>
 
@@ -19,6 +19,10 @@
     <button class="delete" ng-click="$ctrl.removeTask(task)">&times;</button>
 
     <input type="checkbox" ng-model="task.checked" ng-change="$ctrl.setChecked(task)" class="toggle-checked"/>
+
+    <span class="text">
+      <strong>{{task.username}}</strong> - {{task.text}}
+    </span>
 
     <span class="text">{{task.text}}</span>
   </li>

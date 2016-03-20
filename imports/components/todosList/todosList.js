@@ -1,4 +1,3 @@
-import angular from 'angular';
 import template from './todosList.html';
 import { Meteor } from 'meteor/meteor';
 
@@ -33,6 +32,9 @@ class TodosListCtrl {
             $ne: true
           }
         }).count();
+      },
+      currentUser() {
+        return Meteor.user();
       }
     });
   }
