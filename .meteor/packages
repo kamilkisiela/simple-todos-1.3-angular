@@ -14,11 +14,9 @@ tracker                 # Meteor's client-side reactive programming library
 standard-minifier-css   # CSS minifier run for production mode
 standard-minifier-js    # JS minifier run for production mode
 es5-shim                # ECMAScript 5 compatibility for older browsers.
-
 ecmascript
-angular:angular
-angular-meteor-auth
+avital:mocha
+dispatch:mocha-phantomjs
 angular-templates
 accounts-password
 dotansimha:accounts-ui-angular
-avital:mocha

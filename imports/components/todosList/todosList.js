@@ -1,4 +1,5 @@
 import template from './todosList.html';
+import angularMeteor from 'angular-meteor';
 import { Meteor } from 'meteor/meteor';
 
 import { Tasks } from '../../api/tasks';
@@ -59,8 +60,10 @@ class TodosListCtrl {
   }
 }
 
-export default angular.module('todosList', [])
+export default angular.module('todosList', [
+  angularMeteor
+])
   .component('todosList', {
     templateUrl: 'imports/components/todosList/todosList.html',
-    controller: TodosListCtrl
+    controller: ['$scope', TodosListCtrl]
   });

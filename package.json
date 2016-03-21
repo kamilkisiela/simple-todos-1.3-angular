@@ -2,10 +2,16 @@
   "name": "simple-todos",
   "private": true,
   "scripts": {
-    "start": "meteor run"
+    "start": "meteor run",
+    "test": "meteor test --once --driver-package dispatch:mocha-phantomjs",
+    "test-watch": "meteor test --driver-package avital:mocha"
   },
   "dependencies": {
-    "angular-meteor": "1.3.7",
+    "angular": "1.5.2",
+    "angular-meteor": "file:../angular-meteor",
     "meteor-node-stubs": "~0.2.0"
+  },
+  "devDependencies": {
+    "angular-mocks": "^1.5.2"
   }
 }
